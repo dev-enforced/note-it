@@ -21,9 +21,6 @@
     color:#ff5a58;
 }
 
-.home-page-title {
-  color: #fbbc04;
-}
 
 .home-content-container {
   position: absolute;
@@ -34,8 +31,7 @@
 .home-content {
   display: flex;
   align-items: center;
-  margin: 2rem 0rem 1rem 0rem;
-  color: #fbbc04;
+  margin: 2rem 0rem 1rem 0rem;  
 }
 .home-content span {
   display: block;
@@ -55,9 +51,7 @@
   margin: 0 0 0.3rem;
   padding-right: 0;
 }
-.home-page-keyword {
-  color: rgb(251, 188, 4);
-}
+
 
 .home-page-features {
   padding: 1rem 1rem;
