@@ -26,10 +26,10 @@ const Homepage = () => {
                         <li>Grow and evolve with you</li>
                     </ul>
                 </div>
-                <Link to="/">
+                <Link className='link-none' to="/">
                     <button className="home-page-button login">LOGIN</button>
                 </Link>
-                <Link to="/">
+                <Link className='link-none' to="/">
                     <button className="home-page-button note">MAKE NOTES</button>
                 </Link>
 

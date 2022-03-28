@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-color: #000;
-  color: #1b5a7c;
+  color: var(--main-text-color);
   background-image: url("https://cdn.shopify.com/s/files/1/1644/5247/files/1_e5ca8b54-f425-48b7-ba74-edbb51089bd3.jpg?v=1593439585");
 }
 
@@ -18,7 +18,7 @@
 }
 
 .home-page-top{
-    color:#ff5a58;
+    color:var(--primary-note);
 }
 
 
@@ -75,12 +75,12 @@
 }
 
 .login {
-  background-color: white;
+  background-color: var(--white);
   color: black;
 }
 .note {
-  background-color: #ff5a58;
-  color: white;
+  background-color: var(--primary-note);
+  color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
