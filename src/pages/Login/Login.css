@@ -1,0 +1,46 @@
+.main-content-container {
+  background-image: url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.auth-form-container {
+  flex-grow: 1;
+  max-width: 450px;
+  border: 1px solid var(--secondary-color);
+  background-color: var(--secondary-bg);
+  box-shadow: var(--default-box-shadow-format);
+  cursor: pointer;
+  height: max-content;
+  border-radius: var(--border-rd-sm);
+}
+
+.gentle-input {
+  padding: 0.25rem 0.5rem;
+  outline: transparent;
+  font-size: 1rem;
+  border: var(--info-bg);
+}
+
+.gentle-input-label {
+  margin: 0.25rem;
+  color: var(--primary-bg);
+}
+
+@media screen and (max-width: 768px) {
+  .main-content-container {
+    height: 112vh;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width:450px) {
+    .auth-form-container{
+        max-width: 300px;
+    }    
+    .other-options{
+        flex-wrap: wrap;
+    }
+}

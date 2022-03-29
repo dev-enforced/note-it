@@ -7,7 +7,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-color: #000;
-  color: #1b5a7c;
+  color: var(--main-text-color);
   background-image: url("https://cdn.shopify.com/s/files/1/1644/5247/files/1_e5ca8b54-f425-48b7-ba74-edbb51089bd3.jpg?v=1593439585");
 }
 
@@ -18,12 +18,9 @@
 }
 
 .home-page-top{
-    color:#ff5a58;
+    color:var(--primary-note);
 }
 
-.home-page-title {
-  color: #fbbc04;
-}
 
 .home-content-container {
   position: absolute;
@@ -34,8 +31,7 @@
 .home-content {
   display: flex;
   align-items: center;
-  margin: 2rem 0rem 1rem 0rem;
-  color: #fbbc04;
+  margin: 2rem 0rem 1rem 0rem;  
 }
 .home-content span {
   display: block;
@@ -55,9 +51,7 @@
   margin: 0 0 0.3rem;
   padding-right: 0;
 }
-.home-page-keyword {
-  color: rgb(251, 188, 4);
-}
+
 
 .home-page-features {
   padding: 1rem 1rem;
@@ -81,12 +75,12 @@
 }
 
 .login {
-  background-color: white;
+  background-color: var(--white);
   color: black;
 }
 .note {
-  background-color: #ff5a58;
-  color: white;
+  background-color: var(--primary-note);
+  color: var(--white);
 }
 
 @media screen and (max-width: 768px) {
