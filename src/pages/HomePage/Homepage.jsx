@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Homepage.css";
 
 const Homepage = () => {
@@ -26,13 +26,12 @@ const Homepage = () => {
                         <li>Grow and evolve with you</li>
                     </ul>
                 </div>
-                <Link className='link-none' to="/">
+                <Link className='link-none' to="/login">
                     <button className="home-page-button login">LOGIN</button>
                 </Link>
-                <Link className='link-none' to="/">
+                <Link className='link-none' to="/page">
                     <button className="home-page-button note">MAKE NOTES</button>
                 </Link>
-
             </div>
         </section>
     )
