@@ -1,8 +1,11 @@
 import React from 'react'
+import { Navigation } from "components"
 import "./NoteDisplay.css";
 const NoteDisplay = () => {
     return (
-        <div>NoteDisplay</div>
+        <>
+            <Navigation />
+        </>
     )
 }
 

@@ -10,7 +10,7 @@ const RoutesList = () => {
             <Route path="/mockman" element={<MockMan />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/page" element={<ProtectedRoutes specificPart={<NoteDisplay />}></ProtectedRoutes>} ></Route>
+            <Route path="/noteshome" element={<ProtectedRoutes specificPart={<NoteDisplay />}></ProtectedRoutes>} ></Route>
         </Routes>
     )
 }
