@@ -13,7 +13,7 @@ const sideNavigationLinks = [
     {
         linkName: "Archive",
         iconRequired: <Archived />,
-        path: "/notesarchive"
+        path: "/notesarchives"
     },
     {
         linkName: "Trash",

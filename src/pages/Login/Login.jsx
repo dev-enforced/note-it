@@ -21,7 +21,7 @@ const Login = () => {
           <h3>SIGN IN</h3>
         </div>
         <div className="auth-content pt-2 px-2">
-          <form className="gentle-form-group gentle-flex-gap" onSubmit={(e) => loginSubmissionHandler(e, loginData)}>
+          <form className="gentle-form-group gentle-flex-gap" onSubmit={(e) => loginSubmissionHandler(e, loginData,authDispatch,navigate)}>
             <div className="gentle-input-group">
               <label className="gentle-input-label">Email</label>
               <input
