@@ -11,25 +11,25 @@ const NoteItem = () => {
                 et quisquam facere quaerat sint corrupti reiciendis beatae nihil laboriosam ducimus, maxime blanditiis sapiente ea? Fugit?
             </div>
             <button className="pin-action pos-absolute icon-btn-action">
-                <PinOutline />
+                <PinOutline className="note-action-icon"/>
             </button>
             <div className="note-actions-container gentle-flex flex-space-between">
                 <div></div>
                 <div className="note-actions gentle-flex-gap">
                     <button className="icon-btn-action">
-                        <Label />
+                        <Label className="note-action-icon"/>
                     </button>
                     <button className="icon-btn-action">
-                        <ColorPalette />
+                        <ColorPalette className="note-action-icon"/>
                     </button>
                     <button className="icon-btn-action">
-                        <Pen />
+                        <Pen className="note-action-icon"/>
                     </button>
                     <button className="icon-btn-action">
-                        <Archived />
+                        <Archived className="note-action-icon"/>
                     </button>
                     <button className="icon-btn-action">
-                        <Delete />
+                        <Delete className="note-action-icon"/>
                     </button>
                 </div>
             </div>
