@@ -7,7 +7,7 @@ const signupSubmissionHandler = (e, signupData, authDispatch, navigationHelper) 
             if (status === 201) {
                 authDispatch({ type: "SIGN-UP", payload: data })
                 localStorage.setItem("validationToken", data.encodedToken);
-                navigationHelper("/")
+                navigationHelper("/noteshome")
             }
         } catch {
             console.error("SIGNUP NOT POSSIBLE")

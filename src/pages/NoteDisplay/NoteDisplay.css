@@ -1,0 +1,11 @@
+.main-wrapper{
+    margin-left: 13rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .main-wrapper {
+    margin-left: 6rem;
+  }
+}

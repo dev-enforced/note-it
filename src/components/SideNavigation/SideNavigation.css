@@ -1,0 +1,58 @@
+.side-navigation-container{
+    max-width:12rem;
+}
+
+.side-nav-link{
+    color:var(--primary-color);
+    font-size: 1.4rem;
+    border-radius: var(--border-rd-sm);
+    width: fit-content;
+    margin: 1.2rem 0;
+    padding:0.2rem 0.8rem;
+}
+
+.side-nav-link:hover{
+    color:var(--primary-color-hover);
+}
+
+.side-icon{
+    font-size:1.4rem;
+}
+
+.side-nav-text{
+    letter-spacing:-0.7px;
+    font-size:1.4rem;
+}
+
+@media only screen and (max-width:768px){
+    .side-navigation-container{
+        max-width: 5rem;
+    }
+
+    .side-nav-text{
+        display: none;
+    }
+
+    .side-icon{
+        font-size:1.8rem;
+    }
+
+    .open .side-navigation-container {
+        position: fixed;
+        z-index: 20;
+        background-color: var(--bg-white);
+        top: 0;
+        margin: 0;
+        bottom: 0;
+        padding: 1rem;
+        padding-top: 15vh;
+        max-width: 15rem;
+        overflow-y: auto;
+    }
+    
+    .open .side-nav-text {
+        display: block;
+    }
+
+
+}

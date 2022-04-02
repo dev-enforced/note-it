@@ -7,7 +7,7 @@ const loginSubmissionHandler = (e, loginData, authDispatch, navigationHelper) =>
             if (status === 200) {
                 authDispatch({ type: "LOG-IN", payload: data });
                 localStorage.setItem("validationToken", data.encodedToken);
-                navigationHelper("/")
+                navigationHelper("/noteshome")
             }
         } catch {
             console.error("LOGIN NOT POSSIBLE")
@@ -15,4 +15,4 @@ const loginSubmissionHandler = (e, loginData, authDispatch, navigationHelper) =>
     })()
 }
 
-export {loginSubmissionHandler}
+export { loginSubmissionHandler }

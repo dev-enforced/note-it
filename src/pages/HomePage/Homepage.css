@@ -83,7 +83,7 @@
   color: var(--white);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .home-page-wrapper {
     height: 112vh;
     background-position: center;

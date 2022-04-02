@@ -10,7 +10,10 @@ const RoutesList = () => {
             <Route path="/mockman" element={<MockMan />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
-            <Route path="/page" element={<ProtectedRoutes specificPart={<NoteDisplay />}></ProtectedRoutes>} ></Route>
+            <Route path="/noteshome" element={<ProtectedRoutes specificPart={<NoteDisplay />}></ProtectedRoutes>} ></Route>
+            <Route path="/noteslabels" element={<ProtectedRoutes specificPart={<></>}></ProtectedRoutes>} ></Route>
+            <Route path="/notesarchives" element={<ProtectedRoutes specificPart={<></>}></ProtectedRoutes>} ></Route>
+            <Route path="/notestrash" element={<ProtectedRoutes specificPart={<></>}></ProtectedRoutes>} ></Route>
         </Routes>
     )
 }
