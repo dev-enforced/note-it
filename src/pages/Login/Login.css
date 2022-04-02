@@ -29,7 +29,7 @@
   color: var(--primary-bg);
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .main-content-container {
     height: 112vh;
     background-position: center;
