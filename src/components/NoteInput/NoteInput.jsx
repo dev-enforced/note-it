@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactQuill from "react-quill";
-import { useNotes } from 'context';
+import { useAuthentication } from 'context';
 import "react-quill/dist/quill.snow.css";
 import "./NoteInput.css";
 
@@ -19,19 +19,19 @@ const NoteInput = ({ closeInput }) => {
         content: ""
     }
     const [notesInputData, setNotesInputData] = useState(initialNoteData);
-    const { notesDispatch } = useNotes();
+    const { authDispatch } = useAuthentication();
 
     return (
         <>
             <div className="note-form-container modal-format">
-                <div className="note-input-container">
+                <div className="note-input-container gentle-input-group">
                     <label className="gentle-input-label" htmlFor='notesTitle'>
                         Title
                     </label>
                     <input
                         id="notesTitle"
                         type="text"
-                        className="gentle-input"
+                        className="gentle-input py-2 px-3"
                         placeholder="Type Here..."
                         value={notesInputData.title}
                         onChange={(e) => setNotesInputData(prev => ({ ...prev, title: e.target.value }))}
@@ -47,15 +47,15 @@ const NoteInput = ({ closeInput }) => {
                         }}
                     />
                 </div>
-                <div className="gentle-flex flexspace-between">
+                <div className="gentle-flex flex-space-between">
                     <div className='gentle-flex-gap flex-wrap'></div>
                     <div className='gentle-flex-gap flex-wrap'>
-                        <button className="btn btn-primary">
+                        <button className="btn btn-secondary" onClick={closeInput}>
                             CANCEL
                         </button>
-                        <button className="btn btn-secondary"
+                        <button className="btn btn-primary"
                             onClick={() => {
-                                notesDispatch({
+                                authDispatch({
                                     type: "ADD_NOTES",
                                     payload: {
                                         title: notesInputData.title,
@@ -64,7 +64,7 @@ const NoteInput = ({ closeInput }) => {
                                 })
                                 closeInput()
                             }}>
-
+                                ADD NOTE
                         </button>
                     </div>
                 </div>

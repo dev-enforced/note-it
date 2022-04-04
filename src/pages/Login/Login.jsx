@@ -28,7 +28,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 onChange={loginDataHandler}
-                className="gentle-input"
+                className="gentle-input gentle-login-input"
                 placeholder="faisalkhan@yahoo.com"
                 required
               />
@@ -39,7 +39,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 onChange={loginDataHandler}
-                className="gentle-input"
+                className="gentle-input gentle-login-input"
                 placeholder="Type here..."
                 required
               />

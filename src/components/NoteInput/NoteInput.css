@@ -3,6 +3,7 @@
     z-index: 30;
 }
 
+
 .modal-format{
     padding: 2rem;
     background-color: var(--bg-white);
@@ -12,7 +13,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 3rem 5rem rgb(0 0 0 / 30%);
-    z-index:20;
+    z-index:30;
 }
 
 .overlay-notes{
@@ -37,4 +38,10 @@
 
 .note-content-editor .quill{
     height: 60%;
+}
+
+@media screen and (max-width:768px){
+    .note-form-container{
+        width:85%;
+    }
 }
