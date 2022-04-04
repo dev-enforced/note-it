@@ -1,0 +1,40 @@
+.note-form-container{
+    width: 60%;
+    z-index: 30;
+}
+
+.modal-format{
+    padding: 2rem;
+    background-color: var(--bg-white);
+    border-radius: var(--border-rd-sm);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 3rem 5rem rgb(0 0 0 / 30%);
+    z-index:20;
+}
+
+.overlay-notes{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:28;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.note-form-container .note-input-container{
+    margin:0;
+    margin-bottom:1rem;
+}
+
+.note-content-editor{
+    height: 15rem;
+    overflow-y:auto;
+}
+
+.note-content-editor .quill{
+    height: 60%;
+}
